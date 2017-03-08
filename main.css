@@ -1,0 +1,467 @@
+#page_wrapper { width: 100%; max-width: 3000px; overflow: hidden;  position: relative; margin: 0 auto; }
+.transition_5 {-webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.transition_1 {-webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out;}
+.marginT50 {margin-top: 50px;}
+.marginT60 {margin-top: 60px;}
+.marginT-50 {margin-top: -50px;}
+.marginT-60 {margin-top: -60px;}
+.marginT-70 {margin-top: -70px;}
+.line { width: 100%; position:absolute;  content:""; height: 2px; bottom: 0px; background: #2f2f44; left: 0;}
+.line2 { width: 100%; position:relative;  content:""; height: 2px; bottom: 0px; background: #2f2f44; left: 0;}
+
+@-webkit-keyframes fadeInOut {
+      from { opacity: 1.0; }
+      50% { opacity: 0.2; }
+      to { opacity: 1.0; }
+  } 
+.pulse{
+	-webkit-animation: fadeInOut 1.5s infinite;
+}
+
+
+.top {min-height: 57px; background: white;}
+.top .top_menu{ padding: 5px 0;}
+.top .top_menu .logo{float:left;}
+.top .top_menu .menu{ text-align: center; padding: 10px 0 0; cursor: default;}
+.top .top_menu .menu a li{display: inline-block; font-family: caviar_dreamsregular; font-size: 19px; padding: 0 15px 0 20px; background-repeat: no-repeat; background-position: left center; }
+.top .top_menu .menu a li:hover, .top .top_menu .menu a .active{background-image: url("images/rozne/menu_kropka.png");}
+.top .menu_mini { float: right; margin-top: 14px;  margin-right: 10px; display:none;}
+.top .menu_mini .menu_mini_img{ cursor: pointer;}
+@media (max-width: 1000px) {
+	.top .top_menu .logo{float:none;}
+	.top .menu_mini { display:block;}
+	.top .top_menu .menu{ display:none; float: none;}
+	.top .top_menu .menu a li {width: 100%;}
+	.top .top_menu .menu a li:hover, .top .top_menu .menu a .active{background-image: none;}
+}
+
+
+.slider {height: 650px; font-family: caviar_dreamsregular; color: white;}
+.slider .bxslider {height: 100%;}
+.bxslider .slide { height: 650px;}
+.bxslider .slide .slider-content{ margin: 0 15%;}
+.bxslider .slide .slider-content .tytul1 {text-align: right; margin-top: 40px; font-family: caviar_dreamsbold;  font-size: 40px;}
+.bxslider .slide .slider-content .tytul2 {text-align: right; font-size: 30px; }
+.bxslider .slide .slider-content .tresc {text-align: right; margin-top: 40px; font-size: 25px;}
+.bxslider .slide .slider-content .tresc a { position: absolute; bottom: 15%; right: 15%; margin-top: 40px;font-size: 24px; font-family: lato; display: inline-block;  background:#31d9b3; padding: 10px 60px; text-decoration: none; color: white;}
+.bxslider .slide  .arrow-slider {position: absolute; bottom: 5%; left: 50%; transform: translate(-50%); height: auto;}
+.bxslider .slide  .arrow-slider:hover {-webkit-animation: fadeInOut 1.5s infinite;}
+
+
+.kolekcja { min-height: 1150px;}
+.kolekcja:after { content:""; display: block; clear: both;}
+.kolekcja .zestaw:not(:first-child) {margin-top:-180px;}
+.kolekcja .parallax-1 {float: left; width: 22%; height: 700px; position: relative; }
+.kolekcja .parallax-1 .parallax-1-box {width: 220px; height: 700px; position: absolute; right:0%;  }
+.kolekcja .parallax-1 .inner-parallax-1 {background: url("images/rozne/parallax.jpg") no-repeat center; height: 100%;}
+.kolekcja .parallax-1 .inner-parallax-1-mask {position: absolute;top: 0px; height: 100%; width: 100%; background: url("images/rozne/kolekcja.png") no-repeat center; height: 100%; background-size: 100% auto; }
+.kolekcja .tresc {float:left; width: 78%; height: 100%; position:relative;  margin-bottom: 20px;}
+.kolekcja .tresc:after { width: 100%; position:absolute;  content:""; height: 2px; bottom: -9px; background: #2f2f44; left: 0;}
+.kolekcja .tresc .wiersz {clear: both; height: 400px;}
+
+.kolekcja .tresc .ramka { height: 374px; width: 374px; position: relative; float: left;}
+.kolekcja .tresc .ramka:after { position: absolute; content: ""; top: 50%; height: 2px; width: 60px; background: black; display: block; right: -60px;}
+.kolekcja .tresc .ramka .opis {position:	absolute; top: 50%; transform: translate(0, -50%); left: 450px; width: 200px;     text-align: center;}
+.kolekcja .tresc .ramka .produkt {height: 100%;	width: 100%;  border: 1px black solid; border-radius: 50%; position: relative; padding: 8px;}
+.kolekcja .tresc .ramka .produkt .produkt-img{height:100%; width: 100%; overflow: hidden; position: relative; border-radius: 50%;}
+.kolekcja .tresc .ramka .produkt .produkt-img  img{ height: 100%; width: 100%;}
+.kolekcja .tresc .ramka .produkt-img  .maska{ position: absolute; margin: auto; top: 50%; left: 50%; height: 100%; width: 100%; transform: translate(-50%, -50%); background: url("images/produkt/maska.png") no-repeat center; background-size: contain; opacity: 0;}
+.kolekcja .tresc .ramka .produkt-img  .maska:hover{opacity: 1;}
+.kolekcja .tresc .ramka .produkt-img  .maska .przycisk{ position: absolute; top:50%; left: 50%; background:#31d9b3; display: block; transform: translate(-50%, -50%); font-family: lato; color: white; text-decoration: none; text-transform: uppercase; font-size: 20px; padding: 7px 60px;}
+.kolekcja .tresc .ramka .produkt-img  .maska .przycisk:hover{color:#31d9b3; background: white;}
+
+.kolekcja .tresc .ramka2 { height: 374px; width: 374px; position: relative; float: right;}
+.kolekcja .tresc .ramka2:after {position: absolute; content: ""; height: 60px; width: 1px; background: black; display: block; left: 50%;}
+.kolekcja .tresc .ramka2 .opis {position: absolute; top: 450px; transform: translate(50%, 0); right: 50%; width: 200px; text-align: center;}
+.kolekcja .tresc .ramka2 .produkt {height: 100%;	width: 100%;  border: 1px black solid; border-radius: 50%; position: relative; padding: 8px;}
+.kolekcja .tresc .ramka2 .produkt .produkt-img{height:100%; width: 100%; overflow: hidden; position: relative; border-radius: 50%;}
+.kolekcja .tresc .ramka2 .produkt .produkt-img  img{ height: 100%; width: 100%;}
+.kolekcja .tresc .ramka2 .produkt-img  .maska{ position: absolute; margin: auto; top: 50%; left: 50%; height: 100%; width: 100%; transform: translate(-50%, -50%); background: url("images/produkt/maska.png") no-repeat center; background-size: contain; opacity: 0;}
+.kolekcja .tresc .ramka2 .produkt-img  .maska:hover{opacity: 1;}
+.kolekcja .tresc .ramka2 .produkt-img  .maska .przycisk{ position: absolute; top:50%; left: 50%; background:#31d9b3; display: block; transform: translate(-50%, -50%); font-family: lato; color: white; text-decoration: none; text-transform: uppercase; font-size: 20px; padding: 7px 60px;}
+.kolekcja .tresc .ramka2 .produkt-img  .maska .przycisk:hover{color:#31d9b3; background: white;}
+
+.kolekcja .tresc .ramka3 { height: 374px; width: 374px; position: absolute; margin-left: 37%; }
+.kolekcja .tresc .ramka3:after { position: absolute; content: ""; top: 50%; height: 1px; width: 60px; background: black; display: block; left: -60px;}
+.kolekcja .tresc .ramka3 .opis {position:	absolute; top: 50%; transform: translate(0, -50%); right: 450px; width: 200px;  text-align: center;}
+.kolekcja .tresc .ramka3 .produkt {height: 100%;	width: 100%;  border: 1px black solid; border-radius: 50%; position: relative; padding: 8px;}
+.kolekcja .tresc .ramka3 .produkt .produkt-img{height:100%; width: 100%; overflow: hidden; position: relative; border-radius: 50%;}
+.kolekcja .tresc .ramka3 .produkt .produkt-img  img{ height: 100%; width: 100%;}
+.kolekcja .tresc .ramka3 .produkt-img  .maska{ position: absolute; margin: auto; top: 50%; left: 50%; height: 100%; width: 100%; transform: translate(-50%, -50%); background: url("images/produkt/maska.png") no-repeat center; background-size: contain; opacity: 0;}
+.kolekcja .tresc .ramka3 .produkt-img  .maska:hover{opacity: 1;}
+.kolekcja .tresc .ramka3 .produkt-img  .maska .przycisk{ position: absolute; top:50%; left: 50%; background:#31d9b3; display: block; transform: translate(-50%, -50%); font-family: lato; color: white; text-decoration: none; text-transform: uppercase; font-size: 20px; padding: 7px 60px;}
+.kolekcja .tresc .ramka3 .produkt-img  .maska .przycisk:hover{color:#31d9b3; background: white;}
+
+
+
+@media screen and (min-width:786px) and  (max-width: 1500px) {
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(even) .opis { top: 50%!important; transform: translate(0, -50%)!important; left: auto !important; right: 450px!important;}
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(odd) .opis { top: 50%!important; transform: translate(0, -50%)!important; left: 450px !important;}
+.zestaw:nth-child(even) .ramkaM1500:nth-child(odd) .opis { top: 50%!important; transform: translate(0, -50%)!important; left: auto !important; right: 450px!important;}
+.zestaw:nth-child(even) .ramkaM1500:nth-child(even) .opis { top: 50%!important; transform: translate(0, -50%)!important; left: 450px !important;}
+
+}
+
+@media  (max-width: 1500px) {
+.zestaw .wiersz {height: auto !important;}
+.zestaw .ramkaM1500 {clear: both; float:none! important; position: relative !important; margin-left: 0 !important; margin-right: 0 !important; margin-top: 0 !important; }
+.zestaw .ramkaM1500:after{top: 50% !important; height: 3px !important; width: 60px !important;}
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(even) { float: right !important; }
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(even):after {    right: auto !important; left: -60px !important; }
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(odd) {float: left !important; }
+.zestaw:nth-child(odd) .ramkaM1500:nth-child(odd):after {  left: auto !important; right: -60px !important;}
+
+.zestaw:nth-child(even) .ramkaM1500:nth-child(odd) {  float: right !important; }
+.zestaw:nth-child(even) .ramkaM1500:nth-child(odd):after {    right: auto !important; left: -60px !important; }
+.zestaw:nth-child(even) .ramkaM1500:nth-child(even) { float: left !important;  }
+.zestaw:nth-child(even) .ramkaM1500:nth-child(even):after {  left: auto !important; right: -60px !important;}
+
+.kolekcja .zestaw:not(:first-child) {margin-top:0px;}
+}
+
+
+
+@media (max-width: 1000px) {
+	.kolekcja .parallax-1  {display: none;}
+	.kolekcja .tresc {width: 100%;}
+	.ramkaM1500 { height: 300px !important; width: 300px !important;}
+	.ramkaM1500 .produkt {height: 300px !important;	width: 300px !important;}
+}
+@media (max-width: 786px) {
+	.ramkaM1500  {width: 100% !important; margin: 0 0 120px 0 !important;}
+	.ramkaM1500:after { display: none !important;}
+	.ramkaM1500 .produkt {height: 300px !important;	width: 300px !important; margin: 0 auto !important;}
+	.ramkaM1500 .opis { bottom: -100px!important; width: 100% !important; top: auto !important; right: auto !important; left: auto !important; transform: inherit !important; }
+}
+
+/*OFERTA*/
+.oferta {min-height: 750px;}
+.oferta .parallax-2 {float: left; width: 22%; height: 750px; position: relative; }
+.oferta .parallax-2 .parallax-2-box {width: 220px; height: 700px; position: absolute; left: 0%; }
+.oferta .parallax-2 .inner-parallax-2 {background: url("images/rozne/parallax.jpg") no-repeat center; height: 100%;}
+.oferta .parallax-2 .inner-parallax-2-mask {position: absolute;top: 0px; height: 100%; width: 100%; background: url("images/rozne/oferta.png") no-repeat center; height: 100%; background-size: 100% auto; }
+.oferta .tresc {float:left; width: 78%; height: 100%; position:relative;  min-height: 750px;}
+.oferta #liquid-outter  {padding: 0 48px; overflow: hidden;}
+.oferta .liquid  {margin-top: 150px;}
+.oferta .liquid .produkt {width: 300px; height: 400px;}
+.oferta .liquid .produkt .obraz { max-width: 300px; height: 300px; overflow: hidden; border-radius: 50%; position: relative;} 
+.oferta .liquid .produkt .obraz .maska{ position: absolute; margin: auto; top: 50%; left: 50%; height: 100%; width: 100%; transform: translate(-50%, -50%); background: url("images/produkt/maska.png") no-repeat center; background-size: contain; opacity: 0;}
+.oferta .liquid .produkt .obraz .maska:hover{opacity: 1;}
+.oferta .liquid .produkt .obraz .maska .przycisk{ position: absolute; top:50%; left: 50%; background:#31d9b3; display: block; transform: translate(-50%, -50%); font-family: lato; color: white; text-decoration: none; text-transform: uppercase; font-size: 20px; padding: 7px 60px;}
+.oferta .liquid .produkt .obraz .maska .przycisk:hover{color:#31d9b3; background: white;}
+.oferta .liquid .produkt .opis {text-align: center;}
+.oferta .liquid .produkt .opis .tresc1 {font-family: lato; font-size: 23px; font-weight: 700;}
+.oferta .liquid .produkt .opis .line_oferta { width: 130px; margin: 0 auto; height:1px; background:#d7dbdb; margin-top: 5px; margin-bottom: 5px;}
+.oferta .liquid .produkt .opis .tresc2 {font-family: lato; font-size: 23px;}
+
+.liquid .next, .liquid .previous {position: absolute; top: 0px; z-index: 2;}
+.liquid .next {right: 0;}
+.oferta .liquid  {position: relative;}
+.oferta .liquid  .wrapper {position: relative;}
+
+@media (max-width: 1000px) {
+	.oferta .parallax-2  {display: none;}
+	.oferta .tresc {width: 100%;}
+}
+@media (max-width: 400px) {
+
+	.oferta .liquid .produkt .obraz { width: 250px; height: 250px;}
+}
+.finansowanie { min-height: 500px;}
+.finansowanie:after { content:""; display: block; clear: both;}
+.finansowanie .parallax-3 {float: left; width: 22%; height: 700px; position: relative; }
+.finansowanie .parallax-3 .parallax-3-box {width: 220px; height: 700px; position: absolute;right:0%; }
+.finansowanie .parallax-3 .inner-parallax-3 {background: url("images/rozne/parallax.jpg") no-repeat center; height: 100%;}
+.finansowanie .parallax-3 .inner-parallax-3-mask {position: absolute;top: 0px; height: 100%; width: 100%; background: url("images/rozne/finansowanie.png") no-repeat center; height: 100%; background-size: 100% auto; }
+.finansowanie .tresc { padding-top: 70px; float: left; width: 78%; min-height: 700px; padding-left: 200px; position: relative;}
+.finansowanie .tresc .wpis  {margin-top: 20px;}
+.finansowanie .tresc .wpis .ikona {position: relative; height: 250px; width: 100%; text-align: center;}
+.finansowanie .tresc .wpis .ikona  img { top: 0; left: 0; right:0; left: 0; margin: auto; max-width: 100%;  height: auto; position: absolute;  transform-origin:  center;}
+.finansowanie .tresc .wpis .ikona :hover {transform: rotateY( 180deg ); -webkit-transform: rotateY(-180deg);}
+.finansowanie .tresc .wpis .opis {font-size: 15px; margin-top: 20px;}
+.finansowanie .tresc .wpis .opis .tytul { font-weight: 600; text-align: center;}
+.finansowanie .tresc .wpis .opis .text { text-align: justify; padding: 0px 25px;}
+.finansowanie .wiecej {text-align: center; min-height: 100px; margin-top: 40px;}
+.finansowanie .wiecej a{display: inline-block; background: #31d9b3; padding: 10px 40px; color: white; font-family: lato; text-decoration: none; font-size: 22px; margin: 0; border: 1px solid #31d9b3;}
+.finansowanie .wiecej a:hover{ background: white; color: #31d9b3;}
+
+
+@media (max-width: 1000px) {
+	.finansowanie .parallax-3  {display: none;}
+	.finansowanie .tresc {width: 100%; padding-left: 0px; margin-left: 0px;  margin-right: 0px;}
+	.finansowanie .wiecej{margin-left: 0px; margin-right: 0px; padding-right: 0px; padding-left: 0px;}
+	
+}
+
+.gwarancja { min-height: 500px;}
+.gwarancja:after { content:""; display: block; clear: both;}
+.gwarancja .parallax-4{float: left; width: 22%; height: 700px; position: relative; }
+.gwarancja .parallax-4 .parallax-4-box {width: 220px; height: 700px; position: absolute; left: 0%; }
+.gwarancja .parallax-4 .inner-parallax-4 {background: url("images/rozne/parallax.jpg") no-repeat center; height: 100%;}
+.gwarancja .parallax-4 .inner-parallax-4-mask {position: absolute;top: 0px; height: 100%; width: 100%; background: url("images/rozne/gwarancja.png") no-repeat center; height: 100%; background-size: 100% auto; }
+.gwarancja .tresc { padding-top: 70px; float: left; width: 78%; min-height: 700px; position: relative;}
+.gwarancja .tresc .wpis  {margin-top: 20px;}
+.gwarancja .tresc .wpis .ikona {position: relative; height: 250px; width: 100%; text-align: center;}
+.gwarancja .tresc .wpis .ikona  img { top: 0; left: 0; right: 0;	bottom:0; margin: auto; max-width: 100%; height: auto; position: absolute;}
+.gwarancja .tresc .wpis .ikona  img:hover {transform: rotateY( 180deg ); -webkit-transform: rotateY(-180deg);}
+.gwarancja .tresc .wpis .opis {font-size: 15px; margin-top: 20px;}
+.gwarancja .tresc .wpis .opis .tytul { font-weight: 600; text-align: center;}
+.gwarancja .tresc .wpis .opis .text { text-align: justify; padding: 0px 25px;}
+.gwarancja .wiecej {text-align: center; min-height: 100px; margin-top: 40px;}
+.gwarancja .wiecej a{display: inline-block; background: #31d9b3; padding: 10px 40px; color: white; font-family: lato; text-decoration: none; font-size: 22px; margin: 0; border: 1px solid #31d9b3;}
+.gwarancja .wiecej a:hover{background: white; color: #31d9b3; }
+
+@media (max-width: 1000px) {
+	.gwarancja .parallax-4  {display: none;}
+	.gwarancja .tresc {width: 100%; padding-left: 0px; margin-left: 0px;  margin-right: 0px;}
+	.gwarancja .wiecej{margin-left: 0px; margin-right: 0px; padding-right: 0px; padding-left: 0px;}
+	
+}
+
+.produkty  {}
+.produkty .parallax-produkty {min-height: 500px; position: relative; background: url("images/rozne/produkty.png") no-repeat center left; background-size: contain;}
+.produkty .tresc {  position:relative;  margin-bottom: 20px; }
+.produkty .tresc .menu_produkty { font-family: lato; text-align: center; min-height: 100px;}
+.produkty .tresc .menu_produkty  .menu_L1 { padding-left: 0px; }
+.produkty .tresc .menu_produkty  .menu_L1 li {display: inline-block; padding: 20px 60px; background-repeat: no-repeat; background-position: left center; }
+.produkty .tresc .menu_produkty  .menu_L1 li a {text-decoration: none; color: #848484; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.produkty .tresc .menu_produkty  .menu_L1 li a:hover { color: #333333; }
+.produkty .tresc .menu_produkty  .menu_L2 { position: absolute; display:inline-block; display:none; left: 0; width: 100%; padding-left: 0px; }
+.produkty .tresc .menu_produkty  .menu_L2 li { padding: 20px;  background-repeat: no-repeat; background-position: left center;  }
+.produkty .tresc .menu_produkty  .menu_L2 li a {text-decoration: none; color: #848484; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
+.produkty .tresc .menu_produkty  .menu_L2 li a:hover { color: #333333; }
+.produkty .tresc .menu_produkty  .menu_L1 .active, .produkty .tresc  .menu_produkty  .menu_L2 .active{background-image: url("images/rozne/menu_kropka.png");}
+.produkty .tresc .produkty_lista { clear: both;}
+.produkty .tresc .produkty_lista .row{ clear: both !important;}
+.produkty .tresc .produkty_lista .produkt{}
+.produkty .tresc .produkty_lista .produkt .obraz{ position: relative;}
+.produkty .tresc .produkty_lista .produkt .obraz .maska{ position: absolute; width:100%; height: 100%; display:none;}
+.produkty .tresc .produkty_lista .produkt .obraz .maska .wiecej{ position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.produkty .tresc .produkty_lista .produkt .obraz .maska.wiecej:hover{display: block;}
+.produkty .tresc .produkty_lista .produkt .obraz .maska .wiecej a{display: inline-block; background: #31d9b3; padding: 10px 40px; color: white; font-family: lato; text-decoration: none; font-size: 10px; margin: 0; border: 1px solid #31d9b3;}
+.produkty .tresc .produkty_lista .produkt .obraz .maska .wiecej a:hover{background: white; color: #31d9b3;}
+
+
+.produkty .tresc .produkty_lista .produkt .obraz img{ margin: 0 auto;}
+.produkty .tresc .produkty_lista .produkt .produkt_opis{ min-height: 30px; font-family: Lato; font-weight: 300; text-align: center;}
+.produkty .tresc .paginacja {text-align: center;}
+.produkty .tresc .paginacja ul {padding-left: 0px;}
+.produkty .tresc .paginacja ul a{ min-width: 20px; display: inline-block;}
+.produkty .tresc .paginacja ul .first{margin-right: 90px;}
+.produkty .tresc .paginacja ul .last{margin-left: 90px;}
+.produkty .tresc .paginacja ul a li{display: inline-block; color: black;}
+
+@media (max-width: 1000px) {
+	.produkty .tresc .menu_produkty  .menu_L1 li {width:100%; padding:2px;}
+	.produkty .tresc .menu_produkty  .menu_L2 { position: relative;}
+	.produkty .tresc .menu_produkty  .menu_L2  li { padding:2px;}
+	.produkty .tresc .menu_produkty  .menu_L1 li a {width: 100%; display: block;}
+	.produkty .tresc .menu_produkty  .menu_L2 li a {width: 100%; display: block;}
+	.produkty .tresc .menu_produkty  .menu_L1 .active, .produkty .tresc  .menu_produkty  .menu_L2 .active{background-image:none;}
+
+    
+}
+
+@media (max-width: 1000px) {
+	.produkty .tresc .paginacja ul .first{margin-right: 40px;}
+	.produkty .tresc .paginacja ul .last{margin-left: 40px;}
+}
+.kontakt {}
+.kontakt .baner-kontakt { height: 120px; background-image: url("images/baner/kontakt-baner.jpg"); background-position: center center;}
+.kontakt .top {padding-top: 10px; min-height: 180px;}
+.kontakt .top .kontakt_box {position: absolute; top: 50%; transform: translate(0,-50%);}
+.kontakt .top .kontakt_box .kontakt_box1 img{padding-right: 5px;}
+.kontakt .top .kontakt_box .kontakt_box1 .text{padding-top: 5px;}
+.kontakt .formularz {min-height: 840px; background-image: url("images/rozne/kontakt.png"); background-position: center left; background-repeat: no-repeat; font-family: Lato; font-weight: 300;}
+.kontakt .formularz .formularz-inner {}
+.kontakt .formularz .formularz-inner  .form-top{min-height: 100px; margin-top: 40px; margin-bottom: 40px;}
+.kontakt .formularz .formularz-inner  .form {}
+.kontakt .formularz .formularz-inner  .form  form{}
+.kontakt .formularz .formularz-inner  .form  form label{ text-transform: uppercase; margin-bottom: 0px; margin-top: 10px; font-size: 20px;}
+.kontakt .formularz .formularz-inner  .form  form input[type=text]{ width: 100%; height: 37px;}
+.kontakt .formularz .formularz-inner  .form  form textarea{ width: 100%; height: 200px; resize: none;}
+.kontakt .formularz .formularz-inner  .form  .form-bot{ width: 100%; height: 160px; position: relative;}
+.kontakt .formularz .formularz-inner  .form  .form-bot .button{cursor: pointer; font-size: 22px; line-height:55px; color: white; width: 200px;  text-align: center; height: 60px; position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); background:#31d9b3; border: 1px solid #31d9b3;}
+.kontakt .formularz .formularz-inner  .form  .form-bot .button:hover{color:#31d9b3; background: white;}
+
+
+@media (max-width: 1000px) {
+	.kontakt .formularz {background-image: none;}
+	.kontakt .formularz .formularz-inner  .form  .form-bot .button {width: 100%;}
+}
+
+.finansowanie-podstrona {}
+.finansowanie-podstrona .baner-finansowanie { height: 120px; background-image: url("images/baner/finansowanie-baner.jpg"); background-position: center center;}
+.finansowanie-podstrona .top {padding-top: 10px; min-height: 180px; position: relative; font-size: 18px;}
+.finansowanie-podstrona .top .finansowanie_box {margin-top: 20px; margin-bottom: 20px; text-align: center;}
+.finansowanie-podstrona .finansowanie-tresc { min-height: 1500px; background-image: url("images/rozne/finansowanie2.png"); background-position: bottom left; background-repeat: no-repeat; overflow: hidden; }
+.finansowanie-podstrona .finansowanie-tresc .ikony {  }
+.finansowanie-podstrona .finansowanie-tresc .ikonya {}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box{ text-align: center;margin: 10px 0; min-height:500px; }
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box .ikona_box { display: inline-block; position: relative;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box:first-child .ikona_box:after { width: 5000px; position:absolute;  content:""; height: 2px; top: 50%; background: #000000; right: 100%;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box:last-child .ikona_box:after { width: 5000px; position:absolute;  content:""; height: 2px; top: 50%; background: #000000; left: 100%;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box .ikona_box  img{ margin: 0 auto;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box .tresc_box {margin-top: 40px;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box .tresc_box .tytul_box{ font-size: 18px; text-transform: uppercase;}
+.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box .tresc_box .opis_box{ font-size: 17px;}
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista { margin-top: 50px; margin-bottom: 50px; }
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista .lista_tytul{height: 60px; text-transform: uppercase; font-size: 40px; font-family: caviar_dreamsbold; text-align: center;margin-bottom: 60px;}
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista .lista_tytul .tytul{ display: inline-block;  width: 400px; background: #31d9b3;  color: white;  position: absolute; top: 0; left: 50%;transform: translate(-50%);}
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista .lista{ font-family: lato; font-size: 20px; font-weight: 300; text-align:left;}
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista .lista ul{list-style: none; }
+.finansowanie-podstrona .finansowanie-tresc .finansowanie_lista .lista ul li{background:url('images/rozne/punktor.png') no-repeat left 1px; padding: 0px 0px 3px 39px; margin: 0 0 10px 0;}
+
+
+@media (max-width: 1000px) {
+	.finansowanie-podstrona .finansowanie-tresc {background-image: none;}
+}
+@media (max-width: 1200px) {
+	.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box:first-child .ikona_box:after { content:none; }
+	.finansowanie-podstrona .finansowanie-tresc .ikony .finansowanie_box:last-child .ikona_box:after { content:none; }
+}
+
+.produkt-podstrona {}
+.produkt-podstrona .produkt-podstrona-baner{}
+.produkt-podstrona .produkt-podstrona-inner{}
+.produkt-podstrona .produkt-podstrona-inner .nazwa_produktu{ min-height: 60px; text-align:center; font-size: 25px; }
+.produkt-podstrona .produkt-podstrona-inner .nazwa_produktu .nazwa1{ color: #31d9b3; }
+.produkt-podstrona .produkt-podstrona-inner .nazwa_produktu .nazwa2{ color: black; font-family: caviar_dreamsregular; }
+.produkt-podstrona .produkt-podstrona-inner .produkt-baner {background-image: url("images/rozne/specyfikacja.png");     background-position: center left; BACKGROUND-SIZE: contain; background-repeat: no-repeat; min-height: 700px;}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc {}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-top{ text-align: center; margin-top: 10px; margin-bottom: 30px;}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle{ }
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .obrazek{ }
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .obrazek img{ margin: 0 auto; }
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .spec {}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .spec table{ width: 260px; font-family: lato; line-height: 25px; margin: 0 auto; margin-bottom: 20px;}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .spec table tr:not(:first-child) {border-top: 1px #2f2f44 solid;}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-middle .spec table tr td:first-child { padding-left: 15px;}
+.produkt-podstrona .produkt-podstrona-inner .produkt-tresc .produkt-tresc-right {}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty { min-height: 350px;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .lista_tytul{height: 50px; text-transform: uppercase; font-size: 24px; font-family: lato; text-align: center;margin-bottom: 20px;     margin-top: 30px;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .lista_tytul .tytul{ display: inline-block;  width: 280px; background: #31d9b3;  color: white;  position: absolute; top: 0; left: 50%;transform: translate(-50%); padding: 5px;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista{ }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt{ }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek{ position: relative; }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek img{ margin: 0 auto;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek .maska{ position: absolute; margin: auto; top: 50%; left: 50%; height: 100%; width: 100%; transform: translate(-50%, -50%); background: url("images/produkt/maska.png") no-repeat center; background-size: contain; opacity: 0;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek .maska:hover{ opacity: 1;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek .maska .przycisk{ position: absolute; top:50%; left: 50%; background:#31d9b3; display: block; transform: translate(-50%, -50%); font-family: lato; color: white; text-decoration: none; text-transform: uppercase; font-size: 20px; padding: 5px 25px; }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .obrazek .maska .przycisk:hover{ color:#31d9b3; background: white; border: 1px #31d9b3 solid; }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .inny-produkt-opis{ text-align: center; font-size: 14px; font-family: lato; margin-bottom: 20px; }
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .inny-produkt-opis .opis1{ text-align: center; } 
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .inny-produkt-opis .line3{ width: 70%; background: gray; margin: 0 auto; margin-left: 15%; height: 1px; margin-right: 15%; margin-bottom: 10px; margin-top: 5px;}
+.produkt-podstrona .produkt-podstrona-inner .podobne-produkty .podobne-produkty-lista .inny-produkt .inny-produkt-opis .opis2{ color: #9c9c9c; }
+
+.gwarancja-podstrona  {background-image: url("images/rozne/gwarancja2.png"), url("images/rozne/gwarancja3.png"); background-position: center left, center right; background-repeat: no-repeat,no-repeat;}
+.gwarancja-podstrona .baner-gwarancja { height: 120px; background-image: url("images/baner/gwarancja-baner.jpg"); background-position: center center;}
+.gwarancja-podstrona .top {padding-top: 10px; min-height: 180px;}
+.gwarancja-podstrona .top .kontakt_box {position: absolute; top: 50%; transform: translate(0,-50%);}
+.gwarancja-podstrona .top .kontakt_box .kontakt_box1 img{padding-right: 5px;}
+.gwarancja-podstrona .top .kontakt_box .kontakt_box1 .text{padding-top: 5px;}
+.gwarancja-podstrona .formularz {min-height: 840px;  font-family: Lato; font-weight: 300;}
+.gwarancja-podstrona .formularz .formularz-inner {}
+.gwarancja-podstrona .formularz .formularz-inner  .form-top{min-height: 100px; margin-top: 40px; margin-bottom: 40px;}
+.gwarancja-podstrona .formularz .formularz-inner  .form-top .tytul{height: 70px; width: 400px; max-width: 100%; background: #31d9b3; text-align: center; line-height:70px; font-size: 40px; font-weight: 700; color: white; left:0; right: 0; margin: auto;font-family: caviar_dreamsbold;}
+.gwarancja-podstrona .formularz .formularz-inner  .form {}
+.gwarancja-podstrona .formularz .formularz-inner  .form  form{}
+.gwarancja-podstrona .formularz .formularz-inner  .form  form label{ text-transform: uppercase; margin-bottom: 0px; margin-top: 10px; font-size: 20px; font-weight: 300;}
+.gwarancja-podstrona .formularz .formularz-inner  .form  form input[type=text]{ width: 100%; height: 37px;}
+.gwarancja-podstrona .formularz .formularz-inner  .form  form textarea{ width: 100%; height: 200px; resize: none;}
+.gwarancja-podstrona .formularz .formularz-inner  .form  .form-bot{ width: 100%; height: 160px; position: relative;}
+.gwarancja-podstrona .formularz .formularz-inner  .form  .form-bot .button{cursor: pointer; font-size: 22px; line-height:55px; color: white; width: 200px;  text-align: center; height: 60px; position: absolute; left:0; right: 0; margin: auto; background:#31d9b3; border: 1px solid #31d9b3;}
+.gwarancja-podstrona .formularz .formularz-inner  .form  .form-bot .button:hover{color:#31d9b3; background: white;}
+.gwarancja-podstrona .gwarancja-podstrona-wymagania { margin-top: 50px; margin-bottom: 50px; }
+.gwarancja-podstrona .gwarancja-podstrona-wymagania .lista_tytul{height: 60px; text-transform: uppercase; font-size: 40px; font-family: caviar_dreamsbold; text-align: center;margin-bottom: 60px; }
+.gwarancja-podstrona .gwarancja-podstrona-wymagania .lista_tytul .tytul{ display: inline-block;  width: 400px; background: #31d9b3;  color: white;  position: absolute; left:0; right: 0; margin: auto; max-width: 100%;}
+.gwarancja-podstrona .gwarancja-podstrona-wymagania .lista{ font-family: lato; font-size: 20px; font-weight: 300; text-align:left;}
+.gwarancja-podstrona .gwarancja-podstrona-wymagania .lista ul{list-style: none; }
+.gwarancja-podstrona .gwarancja-podstrona-wymagania .lista ul li{background:url('images/rozne/punktor.png') no-repeat left 1px; padding: 0px 0px 3px 39px; margin: 0 0 10px 0;}
+.gwarancja-podstrona .form-bot-inner { height: 60px; margin-top: 10px;}
+
+@media (max-width: 1000px) {
+	.gwarancja-podstrona  {background-image: none;}
+	.gwarancja-podstrona .formularz .formularz-inner  .form  .form-bot .button {width: 100%;}
+}
+
+
+.wsparcie-podstrona {}
+.wsparcie-podstrona .baner-wsparcie { height: 120px; background-image: url("images/baner/wsparcie-baner.jpg"); background-position: center center;}
+.wsparcie-podstrona .top {padding-top: 10px; min-height: 180px; position: relative; font-size: 18px;}
+.wsparcie-podstrona .top .wsparcie_box {margin-top: 20px; margin-bottom: 20px; text-align: center;}
+.wsparcie-podstrona .wsparcie-tresc { min-height: 1150px;background-image: url("images/rozne/wsparcie2.png"), url("images/rozne/wsparcie.png"); background-position: bottom left, bottom right; background-repeat: no-repeat,no-repeat; overflow: hidden; }
+.wsparcie-podstrona .wsparcie-tresc .ikony {  }
+.wsparcie-podstrona .wsparcie-tresc .ikony a {}
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box{ text-align: center;margin: 10px 0; min-height:470px; }
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box .ikona_box { display: inline-block; position: relative;}
+.wsparcie-podstrona .wsparcie-tresc .ikony:first-child  .wsparcie_box:first-child .ikona_box:after { width: 5000px; position:absolute;  content:""; height: 2px; top: 50%; background: #000000; right: 100%;}
+.wsparcie-podstrona .wsparcie-tresc .ikony:first-child  .wsparcie_box:last-child .ikona_box:after { width: 5000px; position:absolute;  content:""; height: 2px; top: 50%; background: #000000; left: 100%;}
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box .ikona_box  img{ margin: 0 auto;}
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box .tresc_box {margin-top: 40px;}
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box .tresc_box .tytul_box{ font-size: 18px; text-transform: uppercase;}
+.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box .tresc_box .opis_box{ font-size: 17px;}
+.wsparcie-podstrona .wsparcie-tresc .wiecej-div { height: 120px;}
+.wsparcie-podstrona .wsparcie-tresc .wiecej-div .wiecej {text-align: center; height: 40px; line-height: 40px; font-size: 22px; top:0; bottom: 0; left: 0; right: 0; margin: auto; width: 200px; background: #31d9b3; color: white;}
+.wsparcie-podstrona .wsparcie-tresc .wiecej-div a {text-decoration: none;}
+
+@media (max-width: 1000px) {
+	.wsparcie-podstrona .wsparcie-tresc {background-image: none;}
+}
+@media (max-width: 1200px) {
+	.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box:first-child .ikona_box:after { content:none; }
+	.wsparcie-podstrona .wsparcie-tresc .ikony .wsparcie_box:last-child .ikona_box:after { content:none; }
+}
+
+
+
+
+
+#footer { max-width: 1880px; min-height: 400px; background: #2f3845;}
+#footer .logo {text-align: center; padding-top: 20px; padding-bottom: 20px;}
+#footer .logo  img{}
+#footer .bot_menu .menu{ text-align: center; padding: 10px 0; cursor: default;}
+#footer .bot_menu .menu a li{color: white; display: inline-block; font-family: caviar_dreamsregular; font-size: 15px; padding: 0 15px 0 20px; background-repeat: no-repeat; background-position: left center; }
+#footer .social {text-align: center;}
+#footer .dane {text-align: center; font-size: 27px; color: white; font-family: caviar_dreamsregular; min-height: 75px; padding-top: 25px;}
+#footer .dane .dane-inner {margin-top: 10px;}
+#footer .labw {min-height: 80px; padding: 30px 20px; text-align: center; color: white;}
+#footer .labw .footer-tab {margin: 0 auto;}
+#footer .labw .footer-tab tr td{padding: 10px;}
+#footer .labw .footer-tab tr td a{color: white;}
+#footer .labw .footer-tab tr td:first-child {text-align: right;}
+
+
+@media (max-width: 1000px) {
+	#footer .dane {text-align: center; font-size: 20px;}
+	#footer .labw {padding: 0px;}
+	#footer .img-ikona-bottom{ display: none;}
+}
+
+#social {position: fixed; bottom: 20%; right: 0;}
+.social-icon-float {position: relative; margin-bottom: 10px; float: none;  float:left; clear:left; cursor: pointer; border: 1px solid #19A585;}
+#quick-message { position: fixed; top: 50%; transform: translateY(-50%); right: -500px; background-color: #31d9b3; width: 450px; min-height: 510px; border: 1px #16A789 solid;}
+#quick-message .top {height: 70px; width: 100%;}
+#quick-message .top  .arrow-contact {position: absolute; left: 20px; top: 20px;}
+#quick-message .top  .mail-contact {position: absolute;  left: 50%; top: 13px; transform: translate(-50%);}
+#quick-message .middle{ width: 100%; height: 400px; min-height: 400px;}
+#quick-message .middle .left {position: relative; width: 15%; height: 100%; float: left; background-image: url(images/rozne/napisz-do-nas.png); background-image: url(images/rozne/napisz-do-nas.png); background-repeat: no-repeat; background-position: center center;}
+#quick-message .middle .right {position: relative; float: left; width: 85%; height: 100%;  padding: 0px 40px 10px 10px;}
+#quick-message .middle .right .right-inner {}
+#quick-message .middle .right .right-inner .form{ font-family: caviar_dreamsregular; text-align: center;}
+#quick-message .middle .right .right-inner .form p{ text-align: right; margin-bottom: 0px; margin-top: 10px; font-family: caviar_dreamsbold; font-size: 15px; text-transform: uppercase; color: white;}
+#quick-message .middle .right .right-inner .form input[type=text]{ width: 100%; height: 32px; outline: none; border: none; padding:0 6px;}
+#quick-message .middle .right .right-inner .form textarea{ width: 100%; resize: none; height: 220px; outline: none; border: none; padding:6px;}
+#quick-message .middle .right .right-inner .form a { font-family:lato; font-size: 22px; text-decoration: none; padding: 10px 35px; display: inline-block; background: white; color: #3c4452;     margin-top: 10px;}
+#quick-message .bottom  {text-align: center; font-family: caviar_dreamsbold; font-size: 20px; color: white; height: 50px;}
+
+
+
+@media (max-width: 475px) {
+	#quick-message { width: 100% !important; }
+}
+
+
+
+
+

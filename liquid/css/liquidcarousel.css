@@ -1,0 +1,41 @@
+.liquid {
+	padding:10px 0;
+}
+.liquid .previous {
+	left: -48px;
+	position:absolute;
+	display:block;
+	height:100%;
+	width:48px;
+	background: white;
+	background-image:url('../images/left.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.liquid .next {
+	right: -48px;
+	position:absolute;
+	display:block;
+	height:100%;
+	width:48px;
+	background: white;
+	background-image:url('../images/right.png');
+	background-position: center;
+	background-repeat:no-repeat;
+	float:right;
+	margin:0;
+	padding:0;
+}
+.liquid ul li {
+	width:auto;
+	padding:0 2px;
+	margin:0;
+}
+.liquid ul li a img {
+	-moz-box-shadow: 5px 5px 3px #222;
+   	-webkit-box-shadow: 5px 5px 3px #222;
+   	box-shadow: 5px 5px 3px #222;
+}
